@@ -122,17 +122,17 @@ set_property -dict { PACKAGE_PIN AG23  IOSTANDARD LVCMOS33 } [get_ports { vga_pV
 
 ## HDMI out
 #set_property -dict { PACKAGE_PIN Y24   IOSTANDARD LVCMOS33 } [get_ports { hdmi_tx_cec }]; #IO_L1N_T0_12 Sch=hdmi_tx_cec
-#set_property -dict { PACKAGE_PIN AB20  IOSTANDARD TMDS_33  } [get_ports { hdmi_tx_clk_n }]; #IO_L6N_T0_VREF_12 Sch=hdmi_tx_clk_n
-#set_property -dict { PACKAGE_PIN AA20  IOSTANDARD TMDS_33  } [get_ports { hdmi_tx_clk_p }]; #IO_L6P_T0_12 Sch=hdmi_tx_clk_p
+set_property -dict { PACKAGE_PIN AB20  IOSTANDARD TMDS_33  } [get_ports { hdmi_out_clk_n }]; #IO_L6N_T0_VREF_12 Sch=hdmi_tx_clk_n
+set_property -dict { PACKAGE_PIN AA20  IOSTANDARD TMDS_33  } [get_ports { hdmi_out_clk_p }]; #IO_L6P_T0_12 Sch=hdmi_tx_clk_p
 #set_property -dict { PACKAGE_PIN AG29  IOSTANDARD LVCMOS33 } [get_ports { hdmi_tx_hpd }]; #IO_L13P_T2_MRCC_13 Sch=hdmi_tx_hpd
 #set_property -dict { PACKAGE_PIN AF27  IOSTANDARD LVCMOS33 } [get_ports { hdmi_tx_scl }]; #IO_L23N_T3_13 Sch=hdmi_tx_scl
 #set_property -dict { PACKAGE_PIN AF26  IOSTANDARD LVCMOS33 } [get_ports { hdmi_tx_sda }]; #IO_L23P_T3_13 Sch=hdmi_tx_sda
-#set_property -dict { PACKAGE_PIN AC21  IOSTANDARD TMDS_33  } [get_ports { hdmi_tx_n[0] }]; #IO_L5N_T0_12 Sch=hdmi_tx_n[0]
-#set_property -dict { PACKAGE_PIN AC20  IOSTANDARD TMDS_33  } [get_ports { hdmi_tx_p[0] }]; #IO_L5P_T0_12 Sch=hdmi_tx_p[0]
-#set_property -dict { PACKAGE_PIN AA23  IOSTANDARD TMDS_33  } [get_ports { hdmi_tx_n[1] }]; #IO_L4N_T0_12 Sch=hdmi_tx_n[1]
-#set_property -dict { PACKAGE_PIN AA22  IOSTANDARD TMDS_33  } [get_ports { hdmi_tx_p[1] }]; #IO_L4P_T0_12 Sch=hdmi_tx_p[1]
-#set_property -dict { PACKAGE_PIN AC25  IOSTANDARD TMDS_33  } [get_ports { hdmi_tx_n[2] }]; #IO_L7N_T1_12 Sch=hdmi_tx_n[2]
-#set_property -dict { PACKAGE_PIN AB24  IOSTANDARD TMDS_33  } [get_ports { hdmi_tx_p[2] }]; #IO_L7P_T1_12 Sch=hdmi_tx_p[2]
+set_property -dict { PACKAGE_PIN AC21  IOSTANDARD TMDS_33  } [get_ports { hdmi_out_data_n[0] }]; #IO_L5N_T0_12 Sch=hdmi_tx_n[0]
+set_property -dict { PACKAGE_PIN AC20  IOSTANDARD TMDS_33  } [get_ports { hdmi_out_data_p[0] }]; #IO_L5P_T0_12 Sch=hdmi_tx_p[0]
+set_property -dict { PACKAGE_PIN AA23  IOSTANDARD TMDS_33  } [get_ports { hdmi_out_data_n[1] }]; #IO_L4N_T0_12 Sch=hdmi_tx_n[1]
+set_property -dict { PACKAGE_PIN AA22  IOSTANDARD TMDS_33  } [get_ports { hdmi_out_data_p[1] }]; #IO_L4P_T0_12 Sch=hdmi_tx_p[1]
+set_property -dict { PACKAGE_PIN AC25  IOSTANDARD TMDS_33  } [get_ports { hdmi_out_data_n[2] }]; #IO_L7N_T1_12 Sch=hdmi_tx_n[2]
+set_property -dict { PACKAGE_PIN AB24  IOSTANDARD TMDS_33  } [get_ports { hdmi_out_data_p[2] }]; #IO_L7P_T1_12 Sch=hdmi_tx_p[2]
 
 ## OLED Display
 #set_property -dict { PACKAGE_PIN AC17  IOSTANDARD LVCMOS18 } [get_ports { oled_dc }]; #IO_L18N_T2_32 Sch=oled_dc
@@ -168,7 +168,7 @@ set_property -dict { PACKAGE_PIN AG23  IOSTANDARD LVCMOS33 } [get_ports { vga_pV
 #set_property -dict { PACKAGE_PIN AH30  IOSTANDARD LVCMOS33 } [get_ports { jc[2] }]; #IO_L18N_T2_13 Sch=jc[3]
 #set_property -dict { PACKAGE_PIN AK29  IOSTANDARD LVCMOS33 } [get_ports { jc[3] }]; #IO_L15P_T2_DQS_13 Sch=jc[4]
 #set_property -dict { PACKAGE_PIN AD26  IOSTANDARD LVCMOS33 } [get_ports { jc[4] }]; #IO_L19N_T3_VREF_13 Sch=jc[7]
-#set_property -dict { PACKAGE_PIN AG30  IOSTANDARD LVCMOS33 } [get_ports { jc[5] }]; #IO_L18P_T2_13 Sch=jc[8]
+#set_property -dict { PACKAGE_PIN AG30  IOSTANDARD LVCMOS33 } [get_ports { stream_out_TUSER_0[0] }]; #IO_L18P_T2_13 Sch=jc[8]
 #set_property -dict { PACKAGE_PIN AK30  IOSTANDARD LVCMOS33 } [get_ports { jc[6] }]; #IO_L15N_T2_DQS_13 Sch=jc[9]
 #set_property -dict { PACKAGE_PIN AK28  IOSTANDARD LVCMOS33 } [get_ports { jc[7] }]; #IO_L20N_T3_13 Sch=jc[10]
 
